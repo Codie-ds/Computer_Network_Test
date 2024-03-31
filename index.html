@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>April Fool's Surprise!</title>
+	<style>
+		body {
+			background-color: #ff9999;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			padding: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 0.5rem;
+		}
+		p {
+			font-size: 1.5rem;
+			margin-top: 0;
+		}
+		button {
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			background-color: #f44336;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			margin-top: 2rem;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #d32f2f;
+		}
+		@media (max-width: 600px) {
+			h1 {
+				font-size: 2rem;
+			}
+			p {
+				font-size: 1.2rem;
+			}
+			button {
+				padding: 5px 10px;
+				font-size: 1rem;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>APRIL FOOL'S SURPRISE!</h1>
+	<p>You've been pranked! Click the button below to reveal the secret message.</p>
+	<button id="reveal-button">Reveal Message</button>
+	<script>
+		document.getElementById("reveal-button").addEventListener("click", function() {
+			alert("Happy April Fool's Day! You've been tricked! :D");
+		});
+	</script>
+
+    <img src="./april_fool.jpeg" alt="april_fool_img" height="400px" width="500px">
+</body>
+</html>
